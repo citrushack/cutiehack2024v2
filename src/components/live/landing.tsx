@@ -44,7 +44,7 @@ const Landing = () => {
       <div>
         <Image
           src={LOGO}
-          alt="Cutie Hack Logo"
+          alt="Cutie Hack"
           className="absolute -top-6 left-0 w-[25%]"
         />
         <div className="absolute right-0 top-0 m-0 flex items-center justify-center gap-3 md:m-5">

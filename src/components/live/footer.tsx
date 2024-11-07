@@ -52,7 +52,7 @@ const Footer = () => {
       />
       <Image
         src={LOGO}
-        alt="CutieHack Logo"
+        alt="Cutie Hack"
         className="absolute right-[25%] top-[26%] z-0 hidden w-[7%] rotate-[23deg] md:block"
       />
       <div className="absolute bottom-0 z-20 flex w-full justify-center text-lg font-semibold text-black">

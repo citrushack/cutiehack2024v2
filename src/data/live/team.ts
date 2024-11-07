@@ -1,6 +1,10 @@
-import Taaha from "@/public/board/taaha2024.webp";
+import Taaha from "@/public/board/taaha.jpg";
 import JonathanT from "@/public/board/jonathan2024.webp";
 import Allison from "@/public/board/allison2024.webp";
+import Brandon from "@/public/board/bsun.jpg";
+import Hannah from "@/public/board/Hannah.jpg";
+import Chandrahaas from "@/public/board/chandrahaas.jpg";
+import Dylan from "@/public/board/dylan.jpg";
 
 export const COMMITTEES = {
   Operations: ["First Last", "First Last", "First Last", "First Last"],
@@ -53,13 +57,13 @@ export const TEAMS = [
   {
     name: "Chandrahass Mariserla",
     link: "/",
-    image: "",
+    image: Chandrahaas,
     team: "Marketing",
   },
   {
     name: "Hannah Hwang",
     link: "/",
-    image: "",
+    image: Hannah,
     team: "Marketing",
   },
   // SPONSORSHIP
@@ -91,7 +95,7 @@ export const TEAMS = [
   {
     name: "Dylan Vuong",
     link: "/",
-    image: "",
+    image: Dylan,
     team: "UI/UX",
   },
   // SOFTWARE
@@ -110,7 +114,7 @@ export const TEAMS = [
   {
     name: "Brandon Sun",
     link: "/",
-    image: "",
+    image: Brandon,
     team: "Software Engineering",
   },
   {
