@@ -5,6 +5,7 @@ import Brandon from "@/public/board/bsun.jpg";
 import Hannah from "@/public/board/Hannah.jpg";
 import Chandrahaas from "@/public/board/chandrahaas.jpg";
 import Dylan from "@/public/board/dylan.jpg";
+import Jon from "@/public/board/JonDarius.jpg";
 
 export const COMMITTEES = {
   Operations: ["First Last", "First Last", "First Last", "First Last"],
@@ -23,7 +24,7 @@ export const DIRECTORS = [
   {
     name: "Jon Darius",
     link: "/",
-    image: "",
+    image: Jon,
   },
 ];
 
