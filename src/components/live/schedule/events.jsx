@@ -12,27 +12,36 @@ const Events = ({ events, totalDays }) => {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="mx-auto grid w-10/12 grid-cols-6 items-center justify-between rounded border-2 border-black text-base">
-        {totalDays.map((day) => (
-          <button
-            key={day}
-            className={`flex justify-center rounded p-2 text-black focus:outline-none ${
-              selectedDay === day ? "bg-hackathon-blue-100" : "bg-transparent"
-            }`}
-            onClick={() => setSelectedDay(day)}
-          >
-            {day}
-          </button>
-        ))}
+    <div className="relative flex flex-col items-center justify-center">
+      <div className="w-100 absolute -top-20 h-full">
+        <div className="mx-auto grid grid-cols-6 items-center justify-between rounded border-2 text-base">
+          {totalDays.map((day) => (
+            <button
+              key={day}
+              className={`flex justify-center rounded p-2 text-white focus:outline-none ${
+                selectedDay === day ? "bg-[#941173]" : "bg-transparent"
+              }`}
+              onClick={() => setSelectedDay(day)}
+            >
+              {day}
+            </button>
+          ))}
+        </div>
       </div>
-      <div className="mt-6 h-full w-10/12">
+
+      <div className="mt-6 h-full">
+        <div className="grid w-full grid-cols-4 items-center justify-center px-4 py-3 text-lg font-semibold">
+          <div className="col-span-2 text-center md:col-span-1">Time</div>
+          <div className="col-span-2 text-center md:col-span-1">Activity</div>
+          <div className="col-span-2 text-center md:col-span-1">Channel</div>
+          <div className="col-span-2 text-center md:col-span-1">Location</div>
+        </div>
         {events
           .filter(({ day }) => day === selectedDay)
           .map(({ start, summary, description, location }, index) => (
             <div
               key={index}
-              className="font-workSans grid w-full grid-cols-4 items-center justify-center px-4 py-3 text-lg font-semibold"
+              className="grid w-[1000px] grid-cols-4 items-center justify-center px-4 py-3 text-center text-lg font-semibold"
             >
               <p>
                 {new Date(start).toLocaleTimeString("en-US", {
